@@ -7,11 +7,61 @@ body {
     font-size: 21px;
 }
 p {
-    color: blue;
-    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.second-paragraph { font-size: x-large; 
+color: chocolate;}
+/*  This was a class for a paragraph */
+/* Let's keep in mind that the class within the paragraph overruns the overall settings */
 
 h1 {
     font-size: 70px;
     color: pink;
 }
+
+/* Now to call a specifique div we must call it using a period (.) and it's name */
+
+.top-section {color: brown;
+background-color: yellow;}
+
+.bottom-section { color: aqua; 
+background-color: yellowgreen;}
+
+.headlines {
+font-size: 24pxs;
+color: coral;}
+/* this was a class for a span */
+
+/* Side note: There is something called (id) that works the same way as a class with one big difference : you can only have one id per page
+for example you cannot name to paragraphs "top-paragraph" if you want to >> an id is called on css with a # */
+
+
+/* CSS box model */
+
+/* 
+    Margin:
+    Border:
+    Padding:
+*/
+
+.box {
+    margin: 50px;
+    /* you can insetad specify each side of the box this way: margin: top right bottom left */
+    margin: 0px 200px 0px 0px;
+
+
+    border: 10px;
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    /* 2 format to write this kind of code */
+    border-top: 5px solid orange;
+    /* You must select a style, otherwise it won't show up */
+
+
+    padding-right: 0px;
+/* Padding creates the empty space inside the box. margin does the opposite */
+/* you can insetad specify each side of the box this way: padding: top right bottom left */
+/* if you only give to values then it's going to be read as TOP AND BOTTOM + RIGHT AND LEFT */
+
