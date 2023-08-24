@@ -1,0 +1,17 @@
+/* This is for external css, it serves to do several
+changes on many pages at the same time */
+body {
+    background-color: beige;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+}
+p {
+    color: blue;
+    font-size: medium;
+}
+
+h1 {
+    font-size: 70px;
+    color: pink;
+}
