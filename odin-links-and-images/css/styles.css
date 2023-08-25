@@ -1,0 +1,87 @@
+body {
+    font-family: Georgia;
+    font-size: large;
+    color: black;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: 0.7cm;
+    text-transform: uppercase;
+    background-color: khaki;
+    text-align: center;
+    padding: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+.paragraphs-style {
+    width: fit-content;
+}
+
+.list-items-style {
+   width: 70%; 
+}
+.headers-style {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    width: 50%;
+}
+
+.important-words {
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.container {
+width: 80%;
+margin: 0 auto;
+}
+
+li {
+    margin-bottom: 10px;
+}
+section{
+    width: 50%;
+    float: left;
+    margin-left: 2px;
+    background-color: #f9f9dc;
+}
+
+aside {
+    width: 45%;
+    float: right;
+    margin-top: 20px;
+}
+
+footer {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 100px;
+    
+}
+
+a:visited { 
+    color: blueviolet;
+}
+
+a:hover {
+    color: yellowgreen ;
+}
+
+a:active {
+    color: blue;
+}
+
+
