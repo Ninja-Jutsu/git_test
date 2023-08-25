@@ -1,0 +1,41 @@
+p, h1, h2 {
+    color: green;
+}
+/* you can select multiple part of your code at the same time */
+
+.body-text {
+    background-color: aquamarine;
+    padding: 50px;
+}
+
+
+.body-text p {
+    background-color: rgb(25, 26, 26);
+    color: white;
+}
+
+.body-text a {
+    font-weight: bold;
+}
+.body-text a:hover { color: red}
+/* when using .class p. css will only apply the settings to the p's inside the class called */
+
+.important-link { 
+    color: brown;
+}
+
+/* This last didn't work because, the important link we are trying to alter is both inside my body-text
+class and important-link class. Even when I put important-link class before body-text class it still 
+doesn't work because in the body-test I specifically call all links using a . This is called css specificaltion.
+I already saved a link to calculate it  */
+
+.body-text .important-link {
+    color: yellow;
+}
+
+.important-link {
+    color: blueviolet !important;
+}
+/*  to solve it, we included class important-link inside class body-text */
+/* Or instead you can use the option !important. But we must be very careful
+ when using this option and not to abuse it because it will overrule anything else. This is a last resource to use. */
