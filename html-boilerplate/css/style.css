@@ -1,13 +1,11 @@
 /* This is for external css, it serves to do several
 changes on many pages at the same time */
 body {
-    background-color: beige;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 21px;
-}
-p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure;
+    font-family: Arial, 'Times New Roman', Times, serif, sans-serif; 
+    /* In this example, I used font stack. Meaning, I added other fonts, in case one doesn't work the next one does */
+    font-size: 21px
+    ;background-image: url(../img/blue-background.webp);
 }
 
 .second-paragraph { font-size: x-large; 
@@ -23,7 +21,13 @@ h1 {
 /* Now to call a specifique div we must call it using a period (.) and it's name */
 
 .top-section {color: brown;
-background-color: yellow;}
+background-image: url(../img/grey-box.webp);
+/* this is how you can add an image as a background */
+padding: 300px 100px;
+margin: 100px;
+background-size: cover;
+background-position: center;
+}
 
 .bottom-section { color: aqua; 
 background-color: yellowgreen;}
@@ -39,7 +43,7 @@ for example you cannot name to paragraphs "top-paragraph" if you want to >> an i
 
 /* CSS box model */
 
-/* 
+/* In this order: 
     Margin:
     Border:
     Padding:
@@ -52,16 +56,73 @@ for example you cannot name to paragraphs "top-paragraph" if you want to >> an i
 
 
     border: 10px;
-    border-color: red;
+    border-color: rgb(168, 107, 107);
     border-width: 5px;
     border-style: solid;
     /* 2 format to write this kind of code */
     border-top: 5px solid orange;
     /* You must select a style, otherwise it won't show up */
+    padding-right: 0px; }
+    /* Padding creates the empty space inside the box. margin does the opposite */
+    /* you can insetad specify each side of the box this way: padding: top right bottom left */
+    /* if you only give to values then it's going to be read as TOP AND BOTTOM + RIGHT AND LEFT */
 
 
-    padding-right: 0px;
-/* Padding creates the empty space inside the box. margin does the opposite */
-/* you can insetad specify each side of the box this way: padding: top right bottom left */
-/* if you only give to values then it's going to be read as TOP AND BOTTOM + RIGHT AND LEFT */
 
+/* Let's style some texts */
+ 
+h1 { 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+}
+/* by default, all paragraphs have a margin top and bottom. we can get rid of that as follows: */
+h2 { 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0px;
+}
+
+p { 
+    line-height: 30px;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: light;
+    text-align: center;
+    /* better not use "justify" as it leaves a lot of empty spaces = which looks bad on the web */
+    text-transform: uppercase;
+    /* this last is very useful to transform one word in a text */
+    clear: both;
+    /* Could use the option " clear" to force the text to stay away from the floating picture */
+}
+/* we could also control the height 
+of lines inside our paragraphs */
+
+
+
+ol {
+    /* list-style-image:url(../img/red-star.png,), */
+    padding: 50px;
+    list-style: lower-alpha;
+    background-color: blue;
+    list-style-position: inside;
+}
+
+ol li {
+    background-color: red;
+    margin: 10px;
+}
+
+.image-float { 
+    float: right;
+    margin-left: 10px;
+    
+}
+
+.container {
+    color: black;
+    background-color: whitesmoke;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    /* or you can write it this way " margin: 0 auto " */
+}
