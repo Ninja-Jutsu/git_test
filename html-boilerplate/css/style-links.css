@@ -1,10 +1,8 @@
-p { color: black}
 a { color: red}
 a {
     color:green;
     font-weight: bolder;
 }
-
 a:visited { 
     color: blueviolet;
 }
@@ -16,8 +14,6 @@ a:hover {
 a:active {
     color: blue;
 }
-
-
 /*  this last is called sudo class ( must look into this later */
 /* The order is important, hover would only work if it's last */
 /* active state is when you are clicking on the link. Nobody cares */
