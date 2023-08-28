@@ -1,101 +1,62 @@
 body {
-    font-family: Georgia;
-    font-size: large;
-    color: black;
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    font-size: 0.7cm;
-    text-transform: uppercase;
-    background-color: khaki;
+    background: #eee;
+    font-family: sans-serif;
+  }
+  
+  .card {
+    width: 400px;
+    background: #fff;
+    margin: 16px auto;
+  }
+  
+  .title {
+    background: #e3f4ff;
+  }
+  
+  .content {
+    background: #e3f4ff;
+  }
+  
+  .button-container {
+    background: #e3f4ff;
+  }
+  
+  button {
+    background: white;
+    border: 1px solid #eee;
+  }
+  
+  /* SOLUTION */
+  
+  /* disclaimer: duplicating the selectors here isn't best practice.
+  In your solution you probably put it right inside the existing selectors,
+  which _is_ the best practice.
+  
+  We separated it out here to make it extra clear what has changed. */
+  
+  .card {
+    padding: 8px;
+  }
+  
+  .title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    padding: 8px;
+  }
+  
+  .content {
+    margin-bottom: 8px;
+    padding: 16px 8px;
+  }
+  
+  .button-container {
     text-align: center;
-    padding: 50px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
-    margin-bottom: 20px;
-}
-
-.paragraphs-style {
-    width: fit-content;
-}
-
-.list-items-style {
-   width: 70%; 
-}
-.headers-style {
-    font-size: 20px;
-    text-transform: capitalize;
-    text-decoration: underline;
-    width: 50%;
-}
-
-.important-words {
-    font-style: italic;
-    font-weight: bolder;
-    text-decoration: underline;
-}
-
-.container {
-width: 80%;
-margin: 0 auto;
-clear: both;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-section{
-    width: 50%;
-    float: left;
-    margin-left: 2px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    background-color: #f9f9dc;
-}
-
-aside {
-    width: 45%;
-    float: right;
-    margin-top: 50px;
-}
-
-footer {
-    width: 100%;
-    float: left;
-    text-align: center;
-    font-size: large;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 100px
-}
-
-a:visited { 
-    color: blueviolet;
-}
-
-a:hover {
-    color: yellowgreen ;
-}
-
-a:active {
-    color: blue;
-}
-
-.link-button {
-    float: right;
-    padding: 10px;
-    background-color: burlywood;
-    margin: 10px;
-    
-}
-
-.list-style {
-    list-style-position: outside;
-    list-style-type: none;
-}
+    padding: 8px;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 24px;
+  }
