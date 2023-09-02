@@ -13,7 +13,7 @@
     </Header>
     <div class="list-style">   <!-- A list of topics covered with links to access-->
         <ul class="links-style">
-            <li><a href="">CSS</a></li>
+            <li><a href="/pages/css-lesson.html">CSS</a></li>
             <li><a href="">JS</a></li>
         </ul>
     </div>
@@ -28,13 +28,14 @@
     </div>
 
     <h1>Type of selectors</h1>
-    <div class="content2-style">
-        <h2>Selectors</h2>
+    <div class="text-style">
+        <h2 >Selectors</h2>
         <p><span>Selectors</span> simply refer to the HTML elements to which CSS rules apply; 
         they’r what is actually being “selected” for each rule. </p>
-    </div>
+        </div>
+<div class="all-paragraphs">
     <div class="content2-style">
-        <div class="text-style">
+        <div>
             <h2>Universal selector</h2>
             <p>The universal selector will select elements of any
                 type, hence the name “universal”, and the syntax
@@ -44,6 +45,76 @@
         </div>
         <div>
             <img src="../img/css-screenshots/universal-selector.png">
+        </div>
+    </div>
+    <div class="content2-style">
+        <div>
+            <h2>Type selectors</h2>
+            <p>
+                A type selector (or element selector) will select
+                all elements of the given element type, and the
+                syntax is just the name of the element: 
+            </p>
+        </div>
+        <div>
+            <img src="../img/css-screenshots/type-selector.png">
+        </div>
+    </div>
+    <div class="content2-style">
+        <div>
+            <h2>Class selectors</h2>
+            <p>
+                Class selectors will select all elements with the given class,
+                 which is just an attribute you place on an HTML element.
+                 Here’s how you add a class to an HTML tag and select it in CSS:
+            </p>
+        </div>
+        <div>
+            <img src="../img/css-screenshots/class-selector.png">
+        </div>
+    </div>
+    <div class="content2-style">
+        <div>
+            <h2>ID selectors</h2>
+            <p>
+                The major difference between classes and IDs is that
+                 an element can only have one ID. It cannot be 
+                 repeated on a single page and should not contain
+                    any whitespace:
+            </p>
+        </div>
+        <div>
+            <img src="../img/css-screenshots/id-selectors.png">
+        </div>
+    </div>
+</div>
+<div class="text-style">
+    <h2>Chaining selectors</h2>
+    <p>Another way to use selectors is to chain them as a
+         list without any separation. Let’s say we had the
+          following HTML: </p>
+    </div>
+    <div class="all-paragraphs">
+        <div class="content3-style">
+            <div>
+                <h2>Chain Multiple Classes/IDs</h2>
+                <p>
+                    What .subsection.header does is it selects any element that
+                     has both the subsection and header classes. Notice how there
+                      isn’t any space between the .subsection and .header class 
+                      selectors. This syntax basically works for chaining any 
+                      combination of selectors, except for chaining more than 
+                      one type selector.
+                </p>
+            </div>
+            <div class="photos-flex">
+                <div>
+                    <img src="../img/css-screenshots/chaining-selector-1.png">
+                </div>
+                <div>
+                    <img src="../img/css-screenshots/chaining-selector-2.png">
+                </div>
+        </div>
         </div>
 
     </div>

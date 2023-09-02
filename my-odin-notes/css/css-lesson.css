@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
 }
 header {
     font-size: 100px;
@@ -14,7 +15,9 @@ header {
     width: 200px;
     height: 150px;
 }
-
+h1,h2{
+    text-decoration-line: underline;
+}
 h1 {
     text-align: center;
     background-color: lightgray;
@@ -25,6 +28,10 @@ h1 {
 span {
     font-weight: bold;
     text-transform: capitalize;
+}
+
+.content2-style p{
+    max-width: 1050px;
 }
 
 .header-display {
@@ -44,7 +51,16 @@ span {
     gap: 16px;
     background-color: rgb(236, 245, 248);
     padding-bottom: 10px;
+}
 
+.content2-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px 20px;
+    gap: 16px;
+    background-color: rgb(236, 245, 248);
 }
 
 .content1-style img {
@@ -53,15 +69,7 @@ span {
     border: 4px solid lightslategray;
 }
 
-.content2-style {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 20px;
-    gap: 16px;
-    background-color: rgb(236, 245, 248);
-    padding-bottom: 10px;
-}
+
 
 .content2-style img {
     width: 250px;
@@ -82,6 +90,8 @@ span {
 
 .links-style a{
     text-decoration-line: none;
+    font-size: 36px;
+    color: chocolate;
 }
 
 .list-style ul {
@@ -92,11 +102,55 @@ span {
     font-size: 30px;
     font-weight: bold;
     background-color: bisque;
-    border: 1px solid rgb(187, 163, 118);
-    
+    border: 1px solid rgb(187, 163, 118); 
+}
+
+.all-paragraphs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a:hover {
     background-color: #fff9c9;
+    font-size: 42px;
+}
+
+.text-style {
+    text-align: center;
+    background-color: rgb(209, 244, 255);
+    padding-bottom: 10px;
     font-size: larger;
+}
+
+.content3-style {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 10px 20px;
+    gap: 16px;
+    background-color: rgb(236, 245, 248);
+}
+
+.content3-style img {
+    width: 450px;
+    height: 225px;
+    border: 4px solid lightslategray;
+}
+
+.photos-flex {
+    display: flex;
+    gap: 36px;
+}
+
+.content3-style p{
+    max-width: 1350px;
+}
+
+.content1-style img {
+    width: 450px;
+    height: 225px;
+    border: 4px solid lightslategray;
 }
