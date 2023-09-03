@@ -15,6 +15,92 @@
     <div class="content-style">
         <h1>COMING SOON...</h1>
     </div>
+<div>
+    <div>
+        <h1>Variables</h1>
+        <h3>You can think of 
+            variables as simply “storage containers” for data in 
+            your code.</h3>
+        <p>/p>
+        <img src="../img/js-screenshots/variables1.png">
+        <img src="../img/js-screenshots/variables2.png">
+
+        <h2>Variable naming</h2>
+        <h3>There are two limitations on variable names in JavaScript:</h3>
+        <p>The name must contain only letters, digits, or the symbols $ and _.
+            The first character must not be a digit.</p>
+            <img src="../img/js-screenshots/variables3.png">
+
+        <h2>Uppercase constants</h2>
+        <h3></h3>
+        <p>There is a widespread practice to use constants as aliases for difficult-to-remember values that are known prior to execution.
+
+            Such constants are named using capital letters and underscores.</p>
+            <img src="../img/js-screenshots/variables4.png">
+
+        <h2>Summary</h2>
+        <img src="../img/js-screenshots/variables-summary.png">
+    </div>
+
+
+    <h1>Numbers</h1>
+    <h3>Adding Numbers and Strings</h3>
+    <p>WARNING !!
+
+        JavaScript uses the + operator for both addition and concatenation.
+        Numbers are added. Strings are concatenated.</p>
+        <img src="../img/js-screenshots/numbers0.png">
+
+    <h2>NaN - Not a Number</h2>
+    
+    <p>NaN is a JavaScript reserved word indicating that a number is not a legal number.
+        Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number)</p>
+        <img src="../img/js-screenshots/numbers1.png">
+        <h3>However, if the string is numeric, the result will be a number:</h3>
+        <img src="../img/js-screenshots/number2.png">
+    <p>You can use the global JavaScript function isNaN() to find out if a value is a not a number:</p>
+        <img src="../img/js-screenshots/numbers3.png">
+
+    <h1>Increment and decrement operators</h1>
+    <p>For a start, note that you can't apply these directly to a number, which might seem strange, but we are assigning a variable a new updated value, not operating on the value itself.</p>
+    <img src="../img/js-screenshots/numbers5.png">
+        <button><a href="https://mdn.github.io/learning-area/javascript/introduction-to-js-1/maths/editable_canvas.html" target="_blank">Try it!</a></button>
+
+    <h1>Assignment = returns a value</h1>
+    <h3></h3>
+    <p>All operators in JavaScript return a value. That’s obvious for + and -, but also true for =.
+        The call x = value writes the value into x and then returns it.</p>
+        <img src="../img/js-screenshots/numbers6.png">
+    <p>In the example above, the result of expression (a = b + 1) is the value which was assigned to a (that is 3). It is then used for further evaluations.</p>
+
+    <h1>Chaining assignments</h1>
+    <h3></h3>
+    <p>Chained assignments evaluate from right to left. First, the rightmost expression 2 + 2 is evaluated and then assigned to the variables on the left: c, b and a. At the end, all the variables share a single value.</p>
+    <img src="../img/js-screenshots/numbers7.png">
+    <img src="../img/js-screenshots/numbers8.png">
+
+    <h1>Comma has a very low precedence</h1>
+    
+    <p>Please note that the comma operator has very low precedence, lower than =, so parentheses are important in the example above.
+        Without them: a = 1 + 2, 3 + 4 evaluates + first, summing the numbers into a = 3, 7, then the assignment operator = assigns a = 3, and the rest is ignored. It’s like (a = 1 + 2), 3 + 4.</p>
+        
+    <h1></h1>
+    <h3></h3>
+    <p></p>
+    <img src="">
+
+    <h1></h1>
+    <h3></h3>
+    <p></p>
+    <img src="">
+
+
+    
+</div>
+
+
+
+
 
 </body>
 </html>

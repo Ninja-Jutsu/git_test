@@ -24,7 +24,7 @@ ul {
     height: 150px;
 }
 .header-display {
-    display: flex;
+    /* display: flex; */display: ;
     align-items: center;
     justify-content: center;
     gap: 36px;
@@ -40,10 +40,9 @@ ul {
 }
 
 a:hover {
-    background-color: #fff9c9;
-    font-size: larger;
+    color: black;
+    font-size: 32px;
 }
-
 .links-style li {
     font-size: 30px;
     font-weight: bold;

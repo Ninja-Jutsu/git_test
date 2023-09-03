@@ -112,8 +112,8 @@ span {
 }
 
 a:hover {
-    background-color: #fff9c9;
-    font-size: 42px;
+    color: black;
+    font-size: 32px;
 }
 
 .text-style {

@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
 }
 header {
     font-size: 100px;
@@ -10,13 +11,33 @@ header {
     text-align: center;
     background-color: bisque
 }
+h1 {
+    background-color: lightgray;
+    margin: 0;
+    padding: 10px 0;
+}
 img {
     width: 150px;
     height: 150px;
 }
 ul {
     margin: 0;
-    padding: 0;
+    padding: 0;}
+
+footer {
+ background-color: rgb(249, 233, 213);
+
+}
+
+.content-style ul li {
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: black;
+    font-size: 32px;
 }
 .header-display {
     display: flex;
@@ -26,30 +47,18 @@ ul {
 }
 
 .links-style a{
-    list-style: none;  
     text-decoration-line: none;
+    color: chocolate;
 }
 
 .list-style ul {
     list-style-type: none;
 }
 
-a:hover {
-    background-color: #fff9c9;
-    font-size: larger;
-}
-
 .links-style li {
-    font-size: 30px;
     font-weight: bold;
     background-color: bisque;
-    border: 1px solid rgb(187, 163, 118);
-}
-
-h1 {
-    background-color: lightgray;
-    margin: 0;
-    padding: 10px 0;
+    border: 1px solid rgb(187, 163, 118); 
 }
 
 .links-style {
@@ -62,8 +71,11 @@ h1 {
     margin: 0;
 }
 
+/* Styling the first part */
 .content-style {
     text-align: center;
+    font-size: 26px;
+
 }
 .content-style p {
     font-size: 26px;
@@ -77,3 +89,18 @@ h1 {
     font-size: 18px;
     background-color: rgb(221, 227, 229);
 } 
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.footer-links img {
+    padding: 10px;
+    border: 2px solid lightblue;
+    background-color: bisque;
+    border-radius: 16px;
+}

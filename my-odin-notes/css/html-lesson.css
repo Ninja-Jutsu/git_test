@@ -83,6 +83,7 @@ span {
 
 .links-style a{
     text-decoration-line: none;
+    color: chocolate;
 }
 
 .list-style ul {
@@ -98,6 +99,6 @@ span {
 }
 
 a:hover {
-    background-color: #fff9c9;
-    font-size: larger;
+        color: black;
+        font-size: 32px;
 }
