@@ -12,35 +12,54 @@
         <div>HTML</div>
     </Header>
 
-    <div class="list-style">   <!-- A list of topics covered with links to access-->
+    <div class="titles">   <!-- A list of topics covered with links to access-->
+        <p>Topics</p>
         <ul class="links-style">
             <li><a href="../index.html">HOME</a></li>
-            <li><a href="/pages/html-lesson.html" target="_blank">HTML</a></li>
+            <li><a href="/pages/html-lesson.html" target="_blank" style="color: darkcyan; font-weight: 1000;">HTML</a></li>
             <li><a href="/pages/css-lesson.html" target="_blank">CSS</a></li>
             <li><a href="/pages/js.html" target="_blank">JS</a></li>
-            <a href="#Links">Links</a>
         </ul>
     </div>
 
+    <!-- Quick access to chapters -->
 
+    <div class="titles">
+            <p>Chapters</p>  
+            <ul class="chapters">
+            <li><a href="#html-elements">Html Elements</a></li>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#use-css">Types of CSS</a></li>
+            <li><a href="#Links">Links</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#inline-block">Inline-Block</a></li>
+            <li><a href="#ids-classes">Id vs Class</a></li>
+            <li><a href="#iframe">Iframe</a></li>
+            <li><a href="#metadata">Metadata</a></li>
+            <li><a href="#extra">Extra</a></li>
+        </ul>
+    </div>
+
+<section id="html-elements">
     <h1>Basic HTML(hypertext markup language) Structure</h1>
     <div class="column-para">
-        <ul><h4>Every HTML file will have to start at least with the following elements:</h4>
+            <ul><h4>Every HTML file will have to start at least with the following elements:</h4>
             <li><span>!DOCTYPE html</span>,telling the bcolumnser or the 
                 code editor that it is an HTML file.</li>
             <li><span>Html</span>, selecting your coding language.</li>
             <li><span>Head</span>, containing all the extra elements such as the author's name, the version of html used, as well as the title appearing on top.</li>
             <li><span>The Body</span>, which will contain everything else our page will be displaying.</li>
         </ul>
-        <a href="#"><img src="../img/html-screenshots/layout-parts-html.png"></a>
+        <img src="../img/html-screenshots/layout-parts-html.png">
     </div>
 
     <h1>HTML Layout Elements</h1>
 
     <div class="column-para">
         <ul>
-            <h4><span>The body</span> is the main part of our html file. It is in this part that you can do your magic. All of it.
-            It should contain your headings, your paragraphs and whatever other elements you are intending to include
+            <h4><span>The body</span> is the main part of our html file. It is in this part that you can do your magic.<br>
+            It should contain your headings, your paragraphs and whatever other elements you are intending to include.<br>
             The body contains your:
             </h4>
             <li><span>Paragraphs</span>: this is the simplest element of an html. It simple separates text. It makes paragraphs </li>
@@ -54,7 +73,6 @@
         <img src="../img/html-screenshots/html-layout-technics.png">
     </div>
 
-
     <div>
     <h1>The Title Attribute</h1>
     <div class="column-para">
@@ -62,20 +80,19 @@
         The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
         <img src="../img/html-screenshots/title-html.png">
         <img src="../img/html-screenshots/attributes-summary.png">
-        <button><a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank"></a>Full Lesson</button>
+         <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank">Full Lesson </a>
     </div>
     </div>
 
     <div>
-        <h1>The HTML 'pre' Element</h1>
+        <h1>The HTML &lt;pre> Element</h1>
         <div class="column-para">
-            <p>The HTML 'pre' element defines preformatted text.
-            The text inside a 'pre' element is displayed in a fixed-width
+            <p>The HTML &lt;pre' element defines preformatted text.
+            The text inside a &lt;pre' element is displayed in a fixed-width
             font (usually Courier), and it preserves both spaces and line break.</p>
-            <img src="../img/html-screenshots/pre-element-html.png">
+            <img src="../img/html-screenshots/pre-element-html.png" title="The Pre Element">
         </div>
     </div>
-
 
     <div>
         <h1>The HTML Style Attribute</h1>
@@ -86,15 +103,13 @@
         </div>
     </div>
 
-
     <div>
         <h1>HTML Formatting Elements</h1>
         <div class="column-para">
             <p>Formatting elements were designed to display special types of text:</p>
-            <img src="../img/html-screenshots/formatting-html.png" style="width: 40%; height: 30%;">
+            <img src="../img/html-screenshots/formatting-html.png" style="width: 400px; height: 30%;">
         </div>
     </div>
-
 
     <div>
         <h1>HTML "blockquote" for Quotations</h1>
@@ -104,9 +119,8 @@
         </div>
     </div>
 
-
     <div>
-        <h1>HTML 'abbr' for Abbreviations</h1>
+        <h1>HTML &lt;abbr' for Abbreviations</h1>
         <div class="column-para">
             <p>Marking abbreviations can give useful information to bcolumnsers, translation systems and search-engines
             </p>
@@ -115,22 +129,22 @@
     </div>
 
     <div>
-        <h1>HTML 'address' for Contact Information</h1>
+        <h1>HTML &lt;address' for Contact Information</h1>
         <div class="column-para">
-            <p>The HTML 'address' tag defines the contact information for the author/owner of a document or an article.
+            <p>The HTML &lt;address' tag defines the contact information for the author/owner of a document or an article.
                 The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
-                The text in the "address" element usually renders in italic, and bcolumnsers will always add a line break before and after the 'address' element.</p>
+                The text in the "address" element usually renders in italic, and bcolumnsers will always add a line break before and after the &lt;address' element.</p>
             <img src="../img/html-screenshots/attributes-summary.png">
         </div>
     </div>
 
     <div>
-        <h1>HTML 'cite' for Work Title</h1>
-        <div class="row-para">
-            <p>TThe HTML 'cite' tag defines the title of a creative work 
+        <h1>HTML  &lt;cite> for Work Title</h1>
+        <div class="column-para">
+            <p>TThe HTML  &lt;cite> tag defines the title of a creative work 
                 (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).Note: A person's name is not the title of a work.
-                The text in the 'cite' element usually renders in italic.</p>
-            <img src="../img/html-screenshots/cite-html.png">
+                The text in the  &lt;cite> element usually renders in italic.</p>
+            <img src="../img/html-screenshots/cite-html.png" style="width: 300px; height: 400px;">
         </div>
     </div>
 
@@ -138,16 +152,16 @@
         <h1>HTML Quotation and Citation Elements <mark>Summary</mark></h1>
         <div class="column-para">
             <img src="../img/html-screenshots/quotation-citing-html.png">
-            <button><a href="https://www.w3schools.com/html/html_quotation_elements.asp" target="_blank">Full Lesson</a></button>
+             <a href="https://www.w3schools.com/html/html_quotation_elements.asp" target="_blank">Full Lesson</a> 
         </div>
     </div>
 
-    
+</section>  
         <!-- Colors -->
-    <div class="colors">
+    <section id="colors">
         <div class="column-para">
         <h1>HSL Color Values</h1>
-        <p>hsl(hue, saturation, lightness)
+        <p><strong>(hue, saturation, lightness)</strong>
             Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.<br>
             Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.<br>
             Lightness is also a percentage value. 0% is black, and 100% is white.</p>
@@ -157,7 +171,7 @@
 
         <div class="column-para">
             <h1>HEX Color Values</h1>
-            <p>#rrggbb <br>
+            <p><strong>#rrggbb</strong><br>
                 Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255). <br>
                 For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other two (green and blue) are set to 00.<br>
                 Another example, #00ff00 is displayed as green, because green is set to its highest value (ff), and the other two (red and blue) are set to 00.<br>
@@ -169,7 +183,7 @@
 
         <div class="column-para">
             <h1>RGB Color Values</h1>
-            <p> rgb(red, green, blue)<br>
+            <p> <strong>rgb(red, green, blue)</strong><br>
                 Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255. <br>
 
                 This means that there are 256 x 256 x 256 = 16777216 possible colors! <br>
@@ -184,11 +198,10 @@
             
                 <img src="../img/html-screenshots/rgb-colors.png">
         </div>
-
-
+        
         <div class="column-para">
             <h1>RGBA Color Values</h1>
-            <p> rgba(red, green, blue, alpha)<br>
+            <p> <strong>rgba(red, green, blue, alpha)</strong><br>
                 RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color.<br>
 
                 An RGBA color value is specified with:<br>
@@ -198,28 +211,25 @@
                 The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)</p>
             
                 <img src="../img/html-screenshots/rgb-colors.png">
-                <button><a  href="https://www.w3schools.com/html/html_colors.asp" target="_blank">Full Lesson</a></button>
+                 <a  href="https://www.w3schools.com/html/html_colors.asp" target="_blank">Full Lesson</a> 
         </div>
-    </div>
+    </section>
 
-        <!-- Using CSS in HTML -->
-
+<section id="use-css"> <!-- Using CSS in HTML -->     
     <div>
         <div class="column-para">
             <h1>Using CSS</h1>
             <ul> CSS can be added to HTML documents in 3 ways:
                 <li> Inline - by using the style attribute inside HTML elements </li>
-                <li> Internal - by using a 'style> element in the 'head> 'section' </li>
-                <li>External - by using a 'link> element to link to an external CSS file</li>
+                <li> Internal - by using a &lt;style> element in the &lt;head> &lt;section' </li>
+                <li>External - by using a &lt;link> element to link to an external CSS file</li>
             </ul>
-                <img src="../img/html-screenshots/rgb-colors.png" style="width: 500px; height: 250px;">
-                <p>Examples</p>
                 <img src="../img/html-screenshots/inline-css.png" style="width: 100%; max-width: 800px;">
-                <p>inline-css</p>
+                <h2>Inline-css</h2>
                 <img src="../img/html-screenshots/internal-css.png" style="width: 400px; height: 400px;">
-                <p>internal-css</p>
+                <h2>Internal-css</h2>
                 <img src="../img/html-screenshots/external-css.png" style="width: 600px; height: 400px;">
-                <p>external-css</p>
+                <h2>External-css</h2>
         </div>
 
 
@@ -227,63 +237,63 @@
             <h1>Chapter Summary <mark>HTML CSS Styling</mark></h1>
             <div class="column-para">
                 <img src="../img/html-screenshots/css-styling-summary.png" style="width: 800px; height: 400px;">
-                <button><a href="https://www.w3schools.com/html/html_css.asp" target="_blank"></a>Full Lesson</button>
+                 <a href="https://www.w3schools.com/html/html_css.asp" target="_blank">Full Lesson</a> 
             </div>
         </div>
-
     </div>
-        <!-- Using Links in HTML -->
+</section>
+
+<section> <!-- Using Links in HTML -->
 
     <div id="Links">
-
+        <h1>The target Attribute</h1>
         <div class="column-para">
-            <h1>The target Attribute</h1>
             <p> By default, the linked page will be displayed in the current bcolumnser window. To change this, you must specify another target for the link.</p>
                 <img src="../img/html-screenshots/link-target-html.png">
         </div>
 
+        <h1>Link to an Email Address</h1>
         <div class="column-para">
-            <h1>Link to an Email Address</h1>
             <p> Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):</p>
                 <img src="../img/html-screenshots/link-to-mail-html.png">
         </div>
 
+        <h1>Links Chapter Summary</h1>
         <div class="column-para">
-            <h1>Links Chapter Summary</h1>
             <p> Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):</p>
                 <img src="../img/html-screenshots/links-summary-html.png" style="width: 900px; height: 200px;">
-                <img src="../img/html-screenshots/link-style-example-html.png" style="width: 900px; height: 700px;">
-                <img src="../img/html-screenshots/link-button-example-html.png" style="width: 450px; height: 600px;">
-                <button><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">Full Lesson</a></button>
+                <img src="../img/html-screenshots/link-style-example-html.png" style="width: 900px;; height: 1000px;">
+                <img src="../img/html-screenshots/link-button-example-html.png" style="width: 400px; height: fit-content;">
+                 <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">Full Lesson</a> 
         </div>
 
-        <div class="column-para">
-            <h1>Create a Bookmark in HTML</h1>
-            <p> Bookmarks can be useful if a web page is very long. <br>
 
+        <h1>Create a Bookmark in HTML</h1>
+        <div class="column-para">
+            <p> Bookmarks can be useful if a web page is very long. <br>
                 To create a bookmark - first create the bookmark, then add a link to it. <br>
-                
                 When the link is clicked, the page will scroll down or up to the location with the bookmark.</p>
-                <img src="../img/html-screenshots/bookmark-html.png">
+                <img src="../img/html-screenshots/bookmark-html.png" style="width: fit-content; height: fit-content;">
                 <h2>Links Chapter Summary</h2>
-                <img src="../img/html-screenshots/bookmark-summary.png">
+                <img src="../img/html-screenshots/bookmark-summary.png" style="width: 60%; height: 30%;">
         </div>
     </div>
+</section>
 
-        <!-- Using Images in HTML -->
+<section><!-- Using Images in HTML -->
         
-    <div id="Images">
+    <article id="images">
+        <h1>The  &lt;img> tag has two required attributes</h1>
         <div class="column-para">
-            <h1>The 'img> tag has two required attributes:</h1>
-            <u>
+            <u class="list-style">
                 <li>src - Specifies the path to the image</li>
                 <li>alt - Specifies an alternate text for the image</li>
             </u>
-            <img src="../img/html-screenshots/img-syntax-html.png">
+            <img src="../img/html-screenshots/img-syntax-html.png" alt="syntax" style="width: 500px;">
         </div>
 
+        <h1>Width and Height, or Style?</h1>
         <div class="column-para">
-            <h1>Width and Height, or Style?</h1>
             <p>The width, height, and style attributes are all valid in HTML. <br>
 
             However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:</p>
@@ -291,346 +301,344 @@
             <img src="../img/html-screenshots/widthheight-style.png">
         </div>
 
+        <h1>Image as a Link</h1>
         <div class="column-para">
-            <h1>Image as a Link</h1>
-            <p>To use an image as a link, put the 'img> tag inside the 'a> tag:</p>
+            <p>To use an image as a link, put the &lt;img> tag inside the &lt;a> tag:</p>
             
             <img src="../img/html-screenshots/img-as-link-html.png">
         </div>
 
+        <h1>Image Floating</h1>
         <div class="column-para">
-            <h1>Image Floating</h1>
             <p>Use the CSS float property to let the image float to the right or to the left of a text:</p>
             
             <img src="../img/html-screenshots/img-as-link-html.png">
         </div>
 
+        <h1>Image Maps</h1>
         <div class="column-para">
-            <h1>Image Maps</h1>
-            <p>The HTML 'map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more 'area> tags.</p>
+            <p>The HTML &lt;map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more &lt;area> tags.</p>
             <img src="../img/html-screenshots/map-image-html.png">
-            <h2>How Does it Work?</h2>
-            <p>The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.<br>
-            To create an image map you need an image, and some HTML code that describes the clickable areas.</p>
+            <h3><em>How Does it Work?</em><br>
+            The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.<br>
+            To create an image map you need an image, and some HTML code that describes the clickable areas.
+            </h3>
         </div>
 
+        <h1>Common Image Formats</h1>
         <div class="column-para">
-            <h1>Common Image Formats/h1>
             <p>Here are the most common image file types, which are supported in all bcolumnsers (Chrome, Edge, Firefox, Safari, Opera):</p>
-            
             <img src="../img/html-screenshots/common-img-format.png">
-
             <h2>Images Chapter Summary</h2>
             <img src="../img/html-screenshots/img-summary-html.png">
 
 
             <h2>Image Map and JavaScript</h2>
             <p>A clickable area can also trigger a JavaScript function.
-
-                Add a click event to the 'area> element to execute a JavaScript function:</p>
+                Add a click event to the &lt;area> element to execute a JavaScript function:</p>
                 <img src="../img/html-screenshots/img-map-javascript-html.png">
                 <img src="../img/html-screenshots/img-map-summary.png">
 
-            <a href="https://www.w3schools.com/html/html_images_imagemap.asp">Must review lesson here</a>
+             <a href="https://www.w3schools.com/html/html_images_imagemap.asp">Must review lesson here</a> 
         </div>
 
+        <h1>HTML Image Tags</h1>
         <div class="column-para">
-            <h1>HTML Image Tags</h1>
             <img src="../img/html-screenshots/img-tags-html.png">
         </div>
 
+        <h1>Background Image on a HTML element</h1>
         <div class="column-para">
-            <h1>Background Image on a HTML element</h1>
-            <p>The HTML 'map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more 'area> tags.</p>
+            <p>The HTML &lt;map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more &lt;area> tags.</p>
             <img src="../img/html-screenshots/map-image-html.png">
-            <h2>How Does it Work?</h2>
-            <p>The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.<br>
-            To create an image map you need an image, and some HTML code that describes the clickable areas.</p>
+            <h3>How Does it Work? <br>
+                The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.<br>
+                To create an image map you need an image, and some HTML code that describes the clickable areas.</h3>
         </div>
 
+        <h1>HTML Background Images</h1>
         <div class="column-para">
-            <h1>HTML Background Images</h1>
             <p>To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property:</p>
-            <img src="../img/html-screenshots/background-img-html.png">
-            <h1>Background Repeat</h1>
+            <img src="../img/html-screenshots/background-img-html.png" alt="background Image im Html" style="width: 550px;">
+            <h2>Background Repeat</h2>
             <P>To avoid the background image from repeating itself, set the background-repeat property to no-repeat.</P>
-            <img src="../img/html-screenshots/non-repeat-html.png">
-            <h1>Background Cover</h1>
+            <img src="../img/html-screenshots/non-repeat-html.png" alt="Non repeat html" style="width: 550px;">
+            <h2>Background Cover</h2>
             <P>If you want the background image to cover the entire element, you can set the background-size property to cover. <br>
 
                 Also, to make sure the entire element is always covered, set the background-attachment property to fixed:<br>
                 
                 This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions):</P>
-            <img src="../img/html-screenshots/background-cover-html.png">
-            <h1>Background Stretch</h1>
+            <img src="../img/html-screenshots/background-cover-html.png" alt="background cover" style="width: 550px;">
+            <h2>Background Stretch</h2>
             <P>If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%:</P>
-            <img src="../img/html-screenshots/background-stretch-html.png">
+            <img src="../img/html-screenshots/background-stretch-html.png" style="width: 550px;">
         </div>
 
+        <h1>The HTML  &lt;picture> Element</h1>
 
         <div class="column-para">
-            <h1>The HTML 'picture> Element</h1>
-            <p>The HTML 'picture> element gives web developers more flexibility in specifying image resources. <br>
-
-                The 'picture> element contains one or more 'source> elements, each referring to different images through the srcset attribute. This way the bcolumnser can choose the image that best fits the current view and/or device.<br>
-                
-                Each 'source> element has a media attribute that defines when the image is the most suitable.</p>
-            <img src="../img/html-screenshots/picture-element-html.png">
-            <p>Note: Always specify an 'img> element as the last child element of the 'picture> element. The 'img> element is used by bcolumnsers that do not support the 'picture> element, or if none of the 'source> tags match.</p>
+            
+            <p>The HTML  &lt;picture> element gives web developers more flexibility in specifying image resources. <br>
+            The  &lt;picture> element contains one or more  &lt;source> elements, each referring to different images through the srcset attribute. This way the bcolumnser can choose the image that best fits the current view and/or device.<br>  
+            Each  &lt;source> element has a media attribute that defines when the image is the most suitable.</p>
+            <img src="../img/html-screenshots/picture-element-html.png" style="width: 650px;">
+            <p>Note: Always specify an  &lt;img> element as the last child element of the  &lt;picture> element. The &lt;img> element is used by bcolumnsers that do not support the &lt;picture> element, or if none of the &lt;source> tags match.</p>
             <h2>Format Support</h2>
-            <p>Some bcolumnsers or devices may not support all image formats. By using the 'picture> element, you can add images of all formats, and the bcolumnser will use the first format it recognizes, and ignore any of the following elements.</p>
-            <img src="../img/html-screenshots/picture-different-format.png">
+            <p>Some browsers or devices may not support all image formats. By using the  &lt;picture> element, you can add images of all formats, and the bcolumnser will use the first format it recognizes, and ignore any of the following elements.</p>
+            <img src="../img/html-screenshots/picture-different-format.png" style="width: 650px;">
         </div>
-        
+
+        <h1>Favicon in HTML</h1>        
         <div class="column-para">
-            <h1>Favicon in HTML</h1>
-            <p>A favicon image is displayed to the left of the page title in the bcolumnser tab</p>
+            <h2>A favicon image is displayed to the left of the page title in the bcolumnser tab</h2>
             <p>To add a favicon to your website, either save your favicon image to the root directory of your webserver, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is "favicon.ico".<br>
-
-                Next, add a 'link> element to your "index.html" file, after the 'title> element, like this:</p>
-            <img src="../img/html-screenshots/map-image-html.png">
-            <h2>How Does it Work?</h2>
-            <p>The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.<br>
-            To create an image map you need an image, and some HTML code that describes the clickable areas.</p>
+                Next, add a &lt;link> element to your "index.html" file, after the &lt;title> element, like this:</p>
+                <img src="../img/html-screenshots/favicon-html.png" style="width: 750px;">
         </div>
-    </div>
 
-    <!-- HTML tables -->
-    <div id="Tables">
+        <h1>Maps Image</h1>
         <div class="column-para">
-            <h1>HTML Tables</h1>
+            <img src="../img/html-screenshots/map-image-html.png" style="width: 750px;">
+            <h3>How Does it Work?<br>
+                The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.<br>
+                To create an image map you need an image, and some HTML code that describes the clickable areas.</h3>
+        </div>
+    </article>
+</section> 
+
+<section>     <!-- HTML tables -->
+    <article id="tables">
+        <h1>HTML Tables</h1>
+        <div class="column-para">
+            
             <p>HTML tables allow web developers to arrange data into columns and columns.</p>
 
-            <img src="../img/html-screenshots/htm-table1.png">
-            <img src="../img/html-screenshots/basic-html-table.png">
+            <img src="../img/html-screenshots/htm-table1.png" style="width: fit-content; height: fit-content;">
+            <img src="../img/html-screenshots/basic-html-table.png" style="width: fit-content;">
             
             <ul>
-                <li><strong>td stands for table data</strong>Everything between 'td> and '/td> are the content of the table cell.</li>
-                <li><strong>tr stands for table column.</strong>Each table column starts with a 'tr> and ends with a '/tr> tag.</li>
-                <li><strong>th stands for table header.</strong>Sometimes you want your cells to be table header cells. In those cases use the 'th> tag instead of the 'td> tag</li>
+                <li><strong>td stands for table data:</strong> Everything between &lt;td> and &lt;/td> are the content of the table cell.</li>
+                <li><strong>tr stands for table column:</strong> Each table column starts with a &lt;tr> and ends with a &lt;/tr> tag.</li>
+                <li><strong>th stands for table header:</strong> Sometimes you want your cells to be table header cells. In those cases use the &lt;th> tag instead of the &lt;td> tag</li>
             </ul>
         </div>
 
+        <h1>HTML Table Tags</h1>
         <div class="column-para">
-            <h1>HTML Table Tags</h1>
-            <img src="../img/html-screenshots/table-tags-html.png">
+            <img src="../img/html-screenshots/table-tags-html.png" style="width: fit-content; height: fit-content;">
         </div>
-
+        <h1>Collapsed Table Borders</h1>
         <div class="column-para">
-            <h1>Collapsed Table Borders</h1>
             <p>To avoid having double borders , set the CSS border-collapse property to collapse.</p>
-            <img src="../img/html-screenshots/border-table-html.png">
+            <img src="../img/html-screenshots/border-table-html.png" style="width: fit-content;">
         </div>
 
+        <h1>Style Table Borders</h1>
         <div class="column-para">
-            <h1>Style Table Borders</h1>
+            
             <p>If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border:</p>
-            <img src="../img/html-screenshots/style-border-table.png">
+            <img src="../img/html-screenshots/style-border-table.png" style="width: fit-content;">
         </div>
 
+        <h1>HTML Table Sizes</h1>
         <div class="column-para">
-            <h1>HTML Table Sizes</h1>
             <p>Use the style attribute with the width or height properties to specify the size of a table, column or column.</p>
-            <img src="../img/html-screenshots/style-border-table.png">
+            <img src="../img/html-screenshots/style-border-table.png" style="width: fit-content; height: fit-content;">
         </div>
 
+        <h1>Vertical Table Headers</h1>
         <div class="column-para">
-            <h1>Vertical Table Headers</h1>
             <p>To use the first column as table headers, define the first cell in each column as a .th> element:</p>
-            <img src="../img/html-screenshots/vertical-table-header.png">
+            <img src="../img/html-screenshots/vertical-table-header.png" style="width: fit-content; height: fit-content;" >
         </div>
 
+        <h1>Table Caption</h1>
         <div class="column-para">
-            <h1>Table Caption</h1>
             <p>You can add a caption that serves as a heading for the entire table.</p>
-            <img src="../img/html-screenshots/caption-table-html.png">
+            <img src="../img/html-screenshots/caption-table-html.png" style="width: fit-content; height: fit-content;">
         </div>
 
+        <h1>Hoverable Table</h1>
         <div class="column-para">
-            <h1>Hoverable Table</h1>
             <p>Use the :hover selector on tr to highlight table columns on mouse over:</p>
-            <img src="../img/html-screenshots/hover-table.png">
+            <img src="../img/html-screenshots/hover-table.png" style="width: fit-content; height: fit-content;">
         </div>
 
+        <h1>HTML Table Colgroup</h1>
         <div class="column-para">
-            <h1>HTML Table Colgroup</h1>
             <p>If you want to style the two first columns of a table, use the <colgroup> and <col> elements. <br>
-                The <colgroup> element should be used as a container for the column specifications. <br>
-
-                    Each group is specified with a <col> element.<br>
-                    
-                    The span attribute specifies how many columns that get the style.<br>
-                    
-                    The style attribute specifies the style to give the columns.</p>
-            <img src="../img/html-screenshots/colgroup-element-html.png">
-            <img src="../img/html-screenshots/colgroup-html2.png">
-            <p>Note: The 'colgroup> tag must be a child of a 'table> element and should be placed before any other table elements</p>
+            The <colgroup> element should be used as a container for the column specifications. <br>
+            Each group is specified with a <col> element.<br>     
+            The span attribute specifies how many columns that get the style.<br>       
+            The style attribute specifies the style to give the columns.</p>
+            <img src="../img/html-screenshots/colgroup-element-html.png" style="width: fit-content; height: fit-content;">
+            <img src="../img/html-screenshots/colgroup-html2.png" style="width: fit-content; height: fit-content;"> 
+            <h3>Note: The &lt;colgroup> tag must be a child of a &lt;table> element and should be placed before any other table elements</h3>
+        </div>
         
-            <h2>Legal CSS Properties</h2>
-            <p>There is only a very limited selection of CSS properties that are allowed to be used in the colgroup:</p>
-            <ul>
+        <h1>Legal CSS Properties</h1>
+        <div class="column-para">
+            <ul>There is only a very limited selection of CSS properties that are allowed to be used in the colgroup:
                 <li>width property</li>
                 <li>visibility property</li>
                 <li>background properties</li>
                 <li>border properties</li>
             </ul>
-            <button><a href="https://www.w3schools.com/html/html_table_colgroup.asp" target="_blank"></a>Full Lesson</button>
-    </div>
-
-    <!-- Not much about lists -->
-    <div>
-        <div class="column-para">
-            <h1>HTML Description Lists</h1>
-            <p>A description list is a list of terms, with a description of each term.
-
-                The '<dl> tag defines the description list, the 'dt> tag defines the term (name), and the 'dd> tag describes each term:</p>
-
-            <dl>
-                <dt>Use the HTML 'dl></dt>
-                <dd>-element to define a description list</dd>
-                <dt>Use the HTML 'dt></dt>
-                <dd>- element to define the description term</dd>
-                <dt>Use the HTML 'dd></dt>
-                <dd>- element to describe the term in a description list</dd>
-              </dl>
-
-              <div class="column-para">
-                <h1>HTML List Tags</h1>
-                <img src="../img/html-screenshots/lists-tags-list.png">
-                <button><a href="https://www.w3schools.com/html/html_lists_other.asp" target="_blank"></a>Full Lesson</button>
-            </div>
+             <a href="https://www.w3schools.com/html/html_table_colgroup.asp" target="_blank">Full Lesson</a> 
         </div>
-    </div>
+    </article>
+</section> 
 
-    <!-- Block and Inline elements -->
 
-    <div>
+<section id="lists">    <!-- Not much about lists -->
+    <article>
+        <h1>HTML Description Lists</h1>
         <div class="column-para">
-            <h1>HTML Block and Inline Elements</h1>
+            
+            <p>A description list is a list of terms, with a description of each term.<br>
+
+                The &lt;dl> tag defines the description list, the &lt;dt> tag defines the term (name), and the &lt;dd> tag describes each term:</p>
+            <dl>
+                <dt>Use the HTML &lt;dl></dt>
+                <dd>-element to define a description list</dd>
+                <dt>Use the HTML &lt;dt></dt>
+                <dd>- element to define the description term</dd>
+                <dt>Use the HTML &lt;dd></dt>
+                <dd>- element to describe the term in a description list</dd>
+            </dl>
+            <h3>Note that it is used in this very example</h3>
+        </div>
+
+        <h1>HTML List Tags</h1>
+        <div class="column-para">
+            <img src="../img/html-screenshots/lists-tags-list.png" style="width: fit-content; height: fit-content;">
+             <a href="https://www.w3schools.com/html/html_lists_other.asp" target="_blank">Full Lesson</a> 
+        </div>
+    </article>
+</section> 
+
+<section id="inline-block"> <!-- Block and Inline elements -->
+
+    <article>
+        <h1>HTML Block and Inline Elements</h1>
+        <div class="column-para">
             <h2>Block Elements</h2>
             <p>There are two display values: block and inline.</p>
-            <img src="../img/html-screenshots/block-elements-html.png">
+            <img src="../img/html-screenshots/block-elements-html.png" style="width: fit-content; height: fit-content;">
             <h2>Inline Elements</h2>
             <p>An inline element does not start on a new line.</p>
-            <img src="../img/html-screenshots/inline-elements-html.png">
+            <img src="../img/html-screenshots/inline-elements-html.png" style="width: fit-content; height: fit-content;">
         </div>
-    </div>
+    </article>
+</section> 
 
-    <!-- Classes vs ids-->
-
-    <div>
+<section id="ids-classes"><!-- Classes vs ids-->
+    <article>
+        <h1> Classes vs ids Summary</h1>
         <div class="column-para">
-            <h1>Summary</h1>
-            <img src="../img/html-screenshots/html-ids.png">
-            <img src="../img/html-screenshots/html-classes.png">
+            <img src="../img/html-screenshots/html-ids.png" style="width: fit-content; height: fit-content;">
+            <img src="../img/html-screenshots/html-classes.png" style="width: fit-content; height: fit-content;">
         </div>
-    </div>
+    </article>
+</section> 
 
-    <!-- HTML Iframes -->
-
-    <div>
+<section id="iframe">    <!-- HTML Iframes -->
+    <article>
+        <h1>HTML Iframes</h1>
         <div class="column-para">
-            <h1>HTML Iframes</h1>
             <h2>An HTML iframe is used to display a web page within a web page.</h2>
-            <p>The HTML 'iframe> tag specifies an inline frame. <br>
-
+            <p>The HTML &lt;iframe> tag specifies an inline frame. <br>
                 An inline frame is used to embed another document within the current HTML document.</p>
-            <img src="../img/html-screenshots/iframe-syntax-html.png">
+            <img src="../img/html-screenshots/iframe-syntax-html.png" style="width: fit-content; height: fit-content;">
             <h2>Iframe - Set Height and Width</h2>
             <p>Use the height and width attributes to specify the size of the iframe.<br>
                 The height and width are specified in pixels by default:</p>
-            <img src="../img/html-screenshots/iframe-width-height1.png">
-            <img src="../img/html-screenshots/iframe-width-height2.png">
+            <img src="../img/html-screenshots/iframe-width-height1.png" style="width: fit-content; height: fit-content;">
+            <img src="../img/html-screenshots/iframe-width-height2.png" style="width: fit-content; height: fit-content;">
             <h2>Iframe - Target for a Link</h2>
-            <p>An iframe can be used as the target frame for a link. <br>
-
-                The target attribute of the link must refer to the name attribute of the iframe:</p>
-            <p>>Click<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_target"</a>here</p><spam>to see example</spam>
+            <p>An iframe can be used as the target frame for a link. <br>The target attribute of the link must refer to the name attribute of the iframe</p>
+             <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_target">Example</a> 
             <h2>Summary</h2>
-            <img src="../img/html-screenshots/iframe-summary.png">
-            <button><a href="https://www.w3schools.com/html/html_iframe.asp"></a>Full Lesson</button>
+            <img src="../img/html-screenshots/iframe-summary.png" style="width: fit-content; height: fit-content;">
+             <a href="https://www.w3schools.com/html/html_iframe.asp">Full Lesson</a> 
         </div>
-    </div>
+    </article>
+</section>
 
+<section id="metadata">  <!-- HTML Metadata -->
 
-    <!-- HTML Metadata -->
-
-    <div>
+    <article>
+        <h1>The HTML &lt;meta> Element</h1>
         <div class="column-para">
-            <h1>The HTML 'meta> Element</h1>
-            <p>The 'meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.<br>
+            
+            <p>The &lt;meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.<br>
              The metadata will not be displayed on the page, but is used by bcolumnsers (how to display content or reload page), by search engines (keywords), and other web services.</p>
-            <img src="../img/html-screenshots/meta-data-html.png">
+            <img src="../img/html-screenshots/meta-data-html.png" style="width: fit-content; height: fit-content;">
             <h2>Setting The Viewport</h2>
             <p>The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.</p>
-            <img src="../img/html-screenshots/viewport-html.png">
+            <img src="../img/html-screenshots/viewport-html.png" style="width: fit-content; height: fit-content;">
             <h2>Setting The Base element</h2>
-            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_base">Example here "Important"</a>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_base" style="width: fit-content; height: fit-content;">Example here "Important"</a> 
             <h2>Summary</h2>
-            <img src="../img/html-screenshots/meta-summary.png">
+            <img src="../img/html-screenshots/meta-summary.png" style="width: fit-content; height: fit-content;">
         </div>
-    </div>
+    </article>
+</section>
 
-    <!-- HTML Responsive Web Design -->
-
+<section  id="extra"><!-- HTML Responsive Web Design -->
     <div>
+        <h1>HTML Responsive Web Design</h1>
         <div class="column-para">
-            <h1>HTML Responsive Web Design</h1>
             <h2>Responsive Text Size</h2>
             <p>The text size can be set with a "vw" unit, which means the "viewport width".</p>
-            <img src="../img/html-screenshots/vw-html.png">
+            <img src="../img/html-screenshots/vw-html.png" style="width: fit-content; height: fit-content;">
             <h2>Setting The Base element</h2>
-            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_base">Example here "Important"</a>
+             <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_base">Example here</a> 
             <h2>Summary</h2>
-            <img src="../img/html-screenshots/meta-summary.png">
+            <img src="../img/html-screenshots/meta-summary.png" style="width: fit-content; height: fit-content;">
         </div>
     </div>
+</section> 
 
-    <!-- HTML Semantic Elements -->
+<section>    <!-- HTML Semantic Elements -->
 
     <div>
+        <h1>Semantic Elements in HTML</h1>
         <div class="column-para">
-            <h1>Semantic Elements in HTML</h1>
-            <h2>HTML &lt;section> Element</h2>
-            <ul> Examples of where a 'section> element can be used:
+            <h2>HTML  &lt;section> Element</h2>
+            <ul> Examples of where a &lt;section> element can be used:
                 <li>Chapters</li>
                 <li>Introduction</li>
                 <li>News items</li>
                 <li>Contact information</li>
             </ul>
-            <img src="../img/html-screenshots/semantic-elements-tags.png">
-            <button><a href="https://www.w3schools.com/html/html5_semantic_elements.asp"></a>Full Lesson</button>
+            <img src="../img/html-screenshots/semantic-elements-tags.png" style="width: fit-content; height: fit-content;">
+             <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Full Lesson</a> 
         </div>
     </div>
 
-    <div>
-        <p>Tips to write good code</p>
-        <a href="https://www.w3schools.com/html/html5_syntax.asp">View Here</a>
+    <div class="column-para">
+        <h2>Tips to write good code</h2>
+         <a href="https://www.w3schools.com/html/html5_syntax.asp">View Here</a> 
     </div>
 
-    <div>
-        <p>Some Useful HTML Character Entities</p>
-        <img src="../img/html-screenshots/character-entities.png">
+    <div class="column-para">
+        <h2>Some Useful HTML Character Entities</h2>
+        <img src="../img/html-screenshots/character-entities.png" style="width: fit-content; height: fit-content;">
     </div>
 
-    <div>
-        <p>HTML Symbol Entities</p>
-        <a href="https://www.w3schools.com/html/html_symbols.asp">View Here</a>
+    <div class="column-para">
+        <h2>HTML Symbol Entities</h2>
+         <a href="https://www.w3schools.com/html/html_symbols.asp">View Here</a>
     </div>
 
-    <div>
-        <p>Emojis in HTML</p>
-        <a href="https://www.w3schools.com/html/html_emojis.asp">View Here</a>
+    <div class="column-para">
+        <h2>Emojis in HTML</h2>
+         <a href="https://www.w3schools.com/html/html_emojis.asp">View Here</a> 
     </div>
+</section> 
 
-
-
-
-
-
-
-
-    
 
 </body>
 </html>
