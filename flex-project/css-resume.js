@@ -539,6 +539,8 @@
 // max-width: 100%;
 // height: auto;
 // }
+
+//> MUST LOOK AT : https://www.w3schools.com/css/css3_mediaqueries_ex.asp
 //+ Center the image:
 // img {
 // display: block; //* Make it a block element
@@ -664,3 +666,96 @@
 // }
 /////////////////////////////////////////////////////////////////////////////
 //! Media Queries: 
+//? Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.
+//? Media queries can be used to check many things, such as:
+//> width and height of the viewport
+//> width and height of the device
+//> orientation (is the tablet/phone in landscape or portrait mode?)
+//> resolution
+
+//+ Media Types: 
+//> all: Used for all media type devices
+//> screen: Used for computer screens, tablets, smart-phones etc.
+// @media screen and (min-width: 480px) { //* When the screen has a width beyond 480px 
+// #leftsidebar {width: 200px; float: left;} //* become smaller and slide to the left 
+// #main {margin-left: 216px;} increase margin
+// }
+//> EXAMPLE : https://www.w3schools.com/css/tryit.asp?filename=trycss3_media_queries2
+//+ VERY IMPORTANT FOR RESPONSIVE LAYOUT: https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+
+//> Case:
+// @media only screen and (orientation: landscape) { //* if the height is wider than width (phone)
+// body {
+//         background-color: lightblue;
+// }
+// }
+//> Case:
+// @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) { //* Many conditions at a time. THE COMMA there behaves like an OR operator (Carefull!!)
+// div.example {
+//         font-size: 50px;
+//         padding: 50px;
+//         border: 8px solid black;
+//         background: yellow;
+// }
+// }
+/////////////////////////////////////////////////////////////////////////////////
+//! FlexBox:
+//+ Flex grow:
+//? Make the third flex item grow eight times faster than the other flex items. ( FASTER )
+/* <div class="flex-container">
+  <div style="flex-grow: 1">1</div>
+  <div style="flex-grow: 1">2</div>
+  <div style="flex-grow: 8">3</div>
+</div> */
+
+//+ Flex Order: 
+/* <div class="flex-container">
+  <div style="order: 3">1</div>
+  <div style="order: 2">2</div>
+  <div style="order: 4">3</div>
+  <div style="order: 1">4</div>
+</div> */
+
+//+ The flex-shrink:
+/* <div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex-shrink: 0">3</div> //* Do not let the third flex item shrink as much as the other flex items
+  <div>4</div>
+</div> */
+
+//+ flex-basis:
+/* <div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex-basis: 200px">3</div> //* Set the initial length of the third flex item to 200 pixels
+  <div>4</div>
+</div> */
+
+//+ THE SHORTHAND FLEX:
+/* <div style="flex: 0 0 200px">3</div> */ //* flex: flex-grow, flex-shrink, flex-basis
+///////////////////////////////////////////////////////////////////////////////
+//! CSS GRID Layout:
+// .grid-container {
+// display: grid;
+// grid-template-columns: auto auto auto; //* each row has 3 column sharing the space
+// grid-template-rows : 80px 200px;; //* each value defines the height of the respective row
+// column-gap: 50px; //* Add row gap or column-gap >> shorthand = gap: 50px 100px;
+// }
+//> https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-template-rows
+
+// .item1 {
+//   grid-column-start: 1; //*Place a grid item at column line 1
+//   grid-column-end: 3; //* and let it end on column line 3:
+//   grid-row-start: 1;
+//   grid-row-end: 3; //* and let it end on row line 3:
+
+//> shorthand : grid-column: 1 / 3; grid-row: 1 / 3;
+//> a shorthand for the shorthands above : grid-area: 1 / 3 / 1 / 3; CONFUSING!!
+
+// .item2 {
+// grid-column: 2 / span 3; //* Make "item2" start on column 2 and span 3 columns
+//> https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column2
+// }
+
+//+ NOTE that you can use justify, align same as Flexbox to adjust the grid inside it's container
