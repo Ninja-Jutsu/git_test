@@ -759,3 +759,48 @@
 // }
 
 //+ NOTE that you can use justify, align same as Flexbox to adjust the grid inside it's container
+////////////////////////////////////////////////////////////////////////////////////////
+//! Responsive Web Design:
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> */ //* The viewport is the user's visible area of a web page.
+//? width = decide-width tells the browser that my content width is the device screen width
+//? scale=1.0 tell the browser to initiate the zoom at 1
+
+// .row::after { //* Must use this after floating elements in order to add other elements below (Just copy paste)
+//   content: "";
+//   clear: both;
+//   display: table;
+// }
+//+ Grid-View: Design for Mobile First
+//? split the page to 12 columns of the same size >> divide 100/12 = 8.33%
+//* CSS:
+// .col-1 {width: 8.33%;}
+// .col-2 {width: 16.66%;}
+// .col-3 {width: 25%;}
+// .col-4 {width: 33.33%;}
+// .col-5 {width: 41.66%;}
+// .col-6 {width: 50%;}
+// .col-7 {width: 58.33%;}
+// .col-8 {width: 66.66%;}
+// .col-9 {width: 75%;}
+// .col-10 {width: 83.33%;}
+// .col-11 {width: 91.66%;}
+// .col-12 {width: 100%;}
+//* HTML:
+/* <div class="row">
+  <div class="col-3 col-s-3">...</div> 
+  <div class="col-6 col-s-9">...</div>
+  <div class="col-3 col-s-12">...</div>
+</div> */
+//! WHAT HAPPENED above:
+//* For desktop: The first and the third section will both span 3 columns each. The middle section will span 6 columns.
+//* For tablet : The first section will span 3 columns, the second will span 9, and the third section will be displayed below the first two sections, and it will span 12 columns
+//> IMPORTANT EXAMPLE to understand: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s
+
+//+ There are tons of devices with different heights and widths, so it is hard to create an exact breakpoint for each device. To keep things simple you could target five groups:
+
+// @media only screen and (max-width: 600px) {...}//* Extra small devices (phones, 600px and down)
+// @media only screen and (min-width: 600px) {...}//* Small devices (portrait tablets and large phones, 600px and up)
+// @media only screen and (min-width: 768px) {...} //* Medium devices (landscape tablets, 768px and up)
+// @media only screen and (min-width: 992px) {...}//* Large devices (laptops/desktops, 992px and up)
+// @media only screen and (min-width: 1200px) {...} //* Extra large devices (large laptops and desktops, 1200px and up)
+

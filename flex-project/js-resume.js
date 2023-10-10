@@ -315,7 +315,7 @@
 // !Web APIs
 //> Canvas:
 //* Must create a Canvas first: <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
-//* Must include : getContext("2d")
+//* Must include : let var = getContext("2d")
 //* Then draw in the canvas using JavaScript : The common way to draw on the canvas is to:
 // Begin a Path - beginPath()
 // Move to a Point - moveTo()
@@ -323,10 +323,39 @@
 // Draw the Path - stroke()
 //? Good example : https://www.w3schools.com/jsref/tryit.asp?filename=tryhtml5_canvas_stroke:
 //+ Canvas fillRect() Method: 
+// ctx.globalAlpha = 0.2; //* You can sit the transparency before drawing 1 or more shapes
 // ctx.fillStyle = "red";
-// ctx.fillRect(20, 20, 150, 100);
+// ctx.fillRect(20, 20, 150, 100); //* Shorthand for begin , end , path (use this instead!!!)
 //? Good example : https://www.w3schools.com/jsref/tryit.asp?filename=tryhtml5_canvas_strokerect
 
+//> GREAT EXAMPLE:
+/* <canvas id="myCanvas"> //* Create a canvas in HTML 
+Your browser does not support the canvas tag. //* The text is never visible ( canvas are always transparent)
+</canvas> */
 
+/* <script> //* Canvas can only be filled by script
+let c = document.getElementById("myCanvas"); //* Get the element canvas
+let ctx = c.getContext("2d"); //* Choose it to be 2D or 3D
+ctx.fillStyle = "red"; //* Choose a style
+ctx.fillRect(20, 20, 75, 50); //* choose the dimensions of the rect
+
+//* Turn transparency on
+
+ctx.globalAlpha = 0.2; //* set a different opacity
+ctx.fillStyle = "blue"; //* draw other Rect
+ctx.fillRect(50, 50, 75, 50);
+ctx.fillStyle = "green";
+ctx.fillRect(80, 80, 75, 50);
+</script> */
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//! cloneNode : 
+//? The cloneNode() method creates a copy of a node, and returns the clone.
+//? The cloneNode() method clones all attributes and their values.
+//? Set the deep parameter to true if you also want to clone descendants (children).
+
+// const node = document.getElementById("myList2").lastChild;
+// const clone = node.cloneNode(true);
+
+// document.getElementById("myList1").appendChild(clone);
 
 
