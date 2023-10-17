@@ -121,11 +121,19 @@
 ///////////////////////////////
 //! CSS Combinators:
 //> descendant selector (space) : The descendant selector matches all elements that are descendants of a specified element.
-//> child selector (>) : The child selector selects all elements that are the children of a specified element.
+//> child selector (>) : The child selector selects all elements that are the direct children of a specified element.
 //> adjacent sibling selector (+) : The adjacent sibling selector is used to select an element that is directly after another specific element.
 // the <p></p> directly after the whole if <div></div> element;
 //> general sibling selector (~): The general sibling selector selects all elements that are next siblings of a specified element.
 // same as (+) but selects all elements after the <div></div>;
+
+// main > div > div {} //* This will only select the grandChildren divs of main
+// .group1 + div + div //* This will only select the second sibling of group1
+
+// .myList:nth-child(5) {/* Selects the 5th element with class myList */}
+// .myList:nth-child(3n) { /* Selects every 3rd element with class myList */}
+
+  
 ///////////////////////////////////////////////////////////////////////////////
 //! CSS Pseudo-classes:
 //? Hover over an element to show another element: 
@@ -227,6 +235,49 @@
 // }
 /////////////////////////////////////////////////////////////////////
 //! Forms:
+//? Many browsers use the system's default appearance instead.
+//? To make your forms' appearance consistent with the rest of your content, you can add the following rules to your stylesheet:
+// button,
+// input,
+// select,
+// textarea {
+//   font-family: inherit; //* force inheriting the value of the parent.
+//   font-size: 100%;
+// padding: 0; //* add the following to cancel browsers default pad mar 
+// margin: 0;
+// box-sizing: border-box;
+// }
+
+//> Style text inside the input element:
+// .form-row input[type='text'] { //* Notice the CSS selector
+//   background-color: #FFFFFF;
+//   border: 1px solid #D6D9DC;
+//   border-radius: 3px;
+//   width: 100%;
+//   padding: 7px;
+//   font-size: 14px;
+// }
+
+//+ Styling forms validations
+//? We can target form controls that have passed or failed validations using the :valid and :invalid pseudo-classes.
+// input:invalid { //* style invalid field
+//   border-color: red;
+// }
+
+// input:valid { //* style valid field
+//   border-color: green;
+// }
+
+// input:invalid:required { //* style required invalid field
+//   border-color: red;
+//   border-color: red;}
+
+//+ Styling :
+//* ::placeholder use this pseudo:element
+
+//! USE JS to style validation messages:
+//* MUST LOOK AT THIS: https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_check
+//> This doesn't affect the text display but only the section where you enter the data
 //+ Interesting examples:
 // input[type=text] {
 //         background-color: white;
@@ -306,10 +357,32 @@
 // width: calc(100% - 100px);
 
 //+The max() Function:
-// width: max(50%, 300px); //* Use max() to set the width of #div1 to whichever value is largest, 50% or 300px;
+// width: max(50%, 300px, 5rem . 1em); //* Use max() to set the width of #div1 to whichever value is largest, 50% , 300px , 5rem, 2em...;
 
 //+ The min() Function:
-// width: min(50%, 300px); //* Use min() to set the width of #div1 to whichever value is smallest, 50% or 300px;
+// width: min(50%, 300px); //* Same as max() but in reverse Use min() to set the width of #div1 to whichever value is smallest, 50% or 300px;
+
+//+ clamp(): combines both max and min
+// h1 {
+//   font-size: clamp(320px, 80vw, 60rem);
+// }
+//? clamp() is a great way to make elements fluid and responsive. clamp() takes 3 values:
+// the smallest value (320px)
+// the ideal value (80vw)
+// the largest value (60rem)
+
+//>Note: To ensure that your text blocks are not narrower than 45 characters or wider than 75 characters (ideal length of a line)
+//> use clamp() and the ch (0-width character advance) unit:
+// p {
+//   width: clamp(45ch, 50%, 75ch);
+// }
+
+//> Note: Can use the same for a fluid font-size:
+// p {
+//   font-size: clamp(1.5rem, 5vw, 3rem);
+// }
+
+//* Read about Padding management in this article : https://web.dev/articles/min-max-clamp
 //////////////////////////////////////////////////////////////
 //! Advanced CSS:
 
@@ -319,6 +392,7 @@
 // #example1 {
 // background-image: url(img_flwr.gif), url(paper.gif); //*  The background images separated by commas, stacked on top of each other, where the first image is closest to the viewer.
 // background-position: right bottom, left top; //* the first image (aligned to the bottom and right) and the second image is a paper background (aligned to the top-left corner).
+// background-position: right 45px bottom 50px; //* This puts the background image 45px from the right and 20px from the bottom of the container.
 // background-repeat: no-repeat, repeat;
 // padding: 15px;
 // }
@@ -417,13 +491,29 @@
 //? In the @font-face rule; first define a name for the font (e.g. myFirstFont) and then point to the font file.
 // @font-face { //* Create a new font-face
 //         font-family: myFirstFont; //* give it a name
-//         src: url(sansation_light.woff); //* indicate the source file
+//         src: 
+              // url(sansation_light.woff) format("woff"), //* indicate the source file
+              // url("fonts/sansation_light..woff2") format("woff2"); //* Can have several options separated by a , for browser's compatibility
+//         font-weight: normal; //*optional
+//         font-style: normal; //*optional
 // }
      
 // { 
 //    font-family: myFirstFont; //* use it later as a normal family
 // }
-//+ Look at this: https://www.w3schools.com/css/tryit.asp?filename=trycss3_font-face_rule_bold
+//? This method may be more reliable than relying on a third-party font API, but it is always wise to include a fallback.
+//> Look at this: https://www.w3schools.com/css/tryit.asp?filename=trycss3_font-face_rule_bold
+
+//+ OR WE CAN LINK A FONT FRON AN EXTERNAL API:
+//* HTML:
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></link> */
+
+//* CSS:
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 ///////////////////////////////////////////////////////////////////////////////
 //! 2D Transforms: 2D Transforms Methods
 
@@ -626,6 +716,13 @@
 // resize: both; //* Resize both width and height
 // overflow: auto;
 // }
+
+//+ ellipsis or (...)
+// p {
+// white-space: nowrap;
+// overflow: hidden;
+// text-overflow: ellipsis;
+// }
 ////////////////////////////////////////////////////////////////////////
 //! Variables: var(--name, value):
 //? Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.
@@ -633,7 +730,7 @@
 //? makes it much easier to change the color values
 //+ Declare a variable :
 // --blue: #1e90ff; //* set a variable 
-// color: var(--blue); //* use it everywhere
+// color: var(--blue , black); //* use it everywhere, give it a fallback value in case ( black )
 //? Name : Required. The variable name (must start with two dashes)
 //? value: Optional. The fallback value (used if the variable is not found)
 //> IMPORTANT EXAMPLE: https://www.w3schools.com/css/tryit.asp?filename=trycss3_var
@@ -664,6 +761,10 @@
 //     --blue: lightblue;//* Change the color to this.
 //   }
 // }
+
+//+ prefers-color-scheme media query:
+//Check this great example :
+// https://codepen.io/TheOdinProjectExamples/pen/powGZzE
 /////////////////////////////////////////////////////////////////////////////
 //! Media Queries: 
 //? Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.

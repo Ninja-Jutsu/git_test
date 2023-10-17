@@ -126,20 +126,29 @@ For 50 years, WWF has been protecting the future of nature. The world's leading 
 //</tr>
 
 /* <tr>
+  <thead>
   <th rowspan="2">Phone:</th> //* Use rowspan to span a header over two cells vertically 
+  </thead>
+
+<tbody>
+<tr>
   <td>123-45-678</td>
 </tr>
 <tr>
   <td>212-00-546</td> //* The Phone will also cover this row
 </tr> */
+// </tbody>
 
 //+ colgroup ( Style Columns ):
 /* <table>
   <colgroup> //* include it in a table 
   <col span="2" style="background-color:red"> //* this will style the first 2 columns MUST USE COL TAG
-  <col style="background-color:yellow"> //* this will style the rest
+  <col style="background-cotablespanlor:yellow"> //* this will style the rest
 </colgroup> */
 //? The <colgroup> must be  after any <caption> elements and before any <thead>, <tbody>, <tfoot>, and <tr> elements.
+//? use thead , tbody and tfoot to structure your table > useful of readability and css styling
+//>View this example:  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_tbody
+//? the browser will add tbody anyway to your code but better add it useful in order to style it
 ////////////////////////////////////////////
 //! data element:
 /* <ul
@@ -150,7 +159,7 @@ For 50 years, WWF has been protecting the future of nature. The world's leading 
 </ul> */
 ////////////////////////////////////////////
 //! datalist ( list ):
-//?this tag is used to provide an "autocomplete" feature for <input> elements. Users will see a drop-down list of pre-defined options as they input data.
+//? this tag is used to provide an "autocomplete" feature for <input> elements. Users will see a drop-down list of pre-defined options as they input data.
 //? Better used inside a form
 //> display: none; by default
 /* <datalist id="browsers">
@@ -189,6 +198,16 @@ For 50 years, WWF has been protecting the future of nature. The world's leading 
  </fieldset>
 </form> */
 //> Tip: should style it with CSS
+//> Case:
+// fieldset {
+//   position: relative;
+// }
+
+// legend {
+//   position: absolute; //* Position the legend using Positioning 
+//   bottom: 0;
+//   right: 0;
+// }
 ////////////////////////////////////
 /* <figure>
   <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
@@ -196,10 +215,12 @@ For 50 years, WWF has been protecting the future of nature. The world's leading 
 </figure> */
 ////////////////////////////////////
 //! form :
+
 //? The most important element of a form is its input types > default is type="text"
 //+ <input type="checkbox">:
 // <label for="vehicle1"> I have a bike</label> //* visible text
-// <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> <br></br> //* create the checkbox
+// <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked> <br></br> //* create the checkbox
+//* use the attribute checked to choose the default selected option
 
 //+ <input type="radio">:
 //? same as checkbox, but radio only allows you to check one box
@@ -208,28 +229,50 @@ For 50 years, WWF has been protecting the future of nature. The world's leading 
 //> The value is not shown to the user, but is the value that is sent to the server on "submit" to identify which radio button that was selected.
 /* <input type="radio" id="html" name="fav_language" value="HTML">
 <label for="html">HTML</label><br>
-<input type="radio" id="css" name="fav_language" value="CSS">
+<input type="radio" id="css" name="fav_language" value="CSS" checked>//* use the attribute checked to choose the default selected option
 <label for="css">CSS</label><br>
 <input type="radio" id="javascript" name="fav_language" value="JavaScript">
 <label for="javascript">JavaScript</label> */
 
 //+ <input type="color">
 // <label for="favcolor">Select your favorite color:</label> //* visible text
-// <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br> //* give it an id, name and default value
+// <input type="color" id="favcolor" name="favcolor" value="#ff0000" required minlength="3"><br><br> //* give it an id, name and default value
+//* To make a field required, we simply add the "required" attribute to it
+//* To add the minimum length validation, we give the form control a 'minlength' attribute with an integer value != maxlength attribute
 //+ <input type="file">:
 //  <label for="myfile">Select files:</label> //* visible text
 //  <input type="file" id="myfile" name="myfile" multiple>//* this will select multiple files.
+//* The name attribute serves as a reference to the data inputted into a form control after submitting it
+//* Form input should always have a name attribute; otherwise, it will be ignored when the form is submitted.
+
+
 //+ <input type="password">:
 //<label for="pwd">Password:</label> //* visible text
-//<input type="password" id="pwd" name="pwd"></input> //* (characters are masked)
+//<input type="password" id="pwd" name="pwd" placeholder="Your_Password"></input> //* (characters are masked)
+//* Use placeholder text to demonstrate how text should be entered and formatted.
+
 //? Note: Any forms involving sensitive information like passwords should be served over HTTPS.
 
+//+ Number:
+/* <label for="quantity">Quantity</label>
+  </div>
+<input type="number" id="quantity" name="quantity" min="1" value="0"></input> */
+//* use min max attributes to define a range for the user
+
+
+//+ text:
+/* <label for="zip_code">Postal / Zip Code:</label>
+  </div>
+<input type="text" id="zip_code" name="zip_code" pattern="(\d{5}([\-]\d{4})?)" required> */
+//* To add a pattern validation, we give the form control a pattern attribute with a regular expression as the value
+//* Always Use a placeholder attribute to show users an example of the expected pattern they need to enter
+//> <textarea> doesn't support pattern attribute
 //+ range:
 // <input type="range" id="a" value="50"></input>
 
 //+ <textarea>
 // <textarea id="w3review" name="w3review" rows="4" cols="50"> //*define a text area (it has a border), name it, define its dimensions;
-//   At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+//   Text area elements accept a couple of unique attributes that other form controls do not. These are the rows and cols attributes.
 // </textarea>
 // <input type="submit" value="Submit"></input> //* add a submit button to send it somewhere
 //> Note : The name attribute is needed to reference the form data after the form is submitted 
@@ -240,8 +283,8 @@ For 50 years, WWF has been protecting the future of nature. The world's leading 
   <label for="cars">Choose a car:</label> //* visible text
   <select name="cars" id="cars"> //* must have the form's name and it's own name
   <optgroup label="Swedish Cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
+    <option value="volvo">Volvo</option> //* if the value attribute is omitted the textContent will be used when the form is submitted
+    <option value="saab" selected>Saab</option> //* the default selected element when the browser first renders is the one with the selected attribute:
   <optgroup label="German Cars">
     <option value="opel">Opel</option>
     <option value="audi">Audi</option>
@@ -289,7 +332,7 @@ For 50 years, WWF has been protecting the future of nature. The world's leading 
 //+ <progress>:
 // <label for="file">Downloading progress:</label>
 // <progress id="file" value="32" max="100"> 32% </progress>
-
+//////////////////////////////////////////////
 //! <svg>:
 // <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> 
 //* xmlns = Without it, some browsers will not render your image or will render it incorrectly.

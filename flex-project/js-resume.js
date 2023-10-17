@@ -299,6 +299,13 @@
 //     x.appendChild(t);
 //     document.head.appendChild(x);
 // }
+//+ Access style elements from CSS:
+//> Option 1:
+// element.style.getPropertyValue("--my-var");//* get variable from inline style
+//> Option 2:
+// getComputedStyle(element).getPropertyValue("--my-var");//* get variable from wherever
+//> Option 3:
+// element.style.setProperty("--my-var", jsVar + 4);//* set variable on inline style
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //! Events:
 //? Different types of event objects: https://www.w3schools.com/jsref/dom_obj_event.asp
@@ -355,7 +362,45 @@ ctx.fillRect(80, 80, 75, 50);
 
 // const node = document.getElementById("myList2").lastChild;
 // const clone = node.cloneNode(true);
-
 // document.getElementById("myList1").appendChild(clone);
+/////////////////////////////////
+//! forms: 
+//+ Constraint Validation DOM Methods
+// checkValidity()	//* Returns true if an input element contains valid data.
+// setCustomValidity()	//* Sets the validationMessage property of an input element.
+
+//+ Constraint Validation DOM Properties:
+// validity	//*Contains boolean properties related to the validity of an input element.
+// validationMessage	//* Contains the message a browser will display when the validity is false.
+// willValidate	//* Indicates if an input element will be validated.
+
+//? validity Properties:
+// customError	//* Set to true, if a custom validity message is set.
+// patternMismatch	//* Set to true, if an element's value does not match its pattern attribute.
+// rangeOverflow	//* Set to true, if an element's value is greater than its max attribute.
+// rangeUnderflow	//* Set to true, if an element's value is less than its min attribute.
+// tooLong	//* Set to true, if an element's value exceeds its maxLength attribute.
+// typeMismatch	//* Set to true, if an element's value is invalid per its type attribute.
+// valueMissing	//* Set to true, if an element (with a required attribute) has no value.
+// valid	//* Set to true, if an element's value is valid.
+
+//> Example:<script>
+//* HTML:
+/* <input id="id1" type="number" max="100" min="20">
+<button onclick="myFunction()">OK</button> */
+//* JS:
+// function myFunction() {
+//     let text;
+//     if (document.getElementById("id1").validity.rangeOverflow) { //* validity property has properties
+//       text = "Value too large";}
+//   else if(document.getElementById("id1").validity.rangeUnderflow) //* validity property has properties
+//   {text = "Value too low";}
+//      else {
+//       text = "Input OK";
+//     } 
+//     document.getElementById("demo").innerHTML = text;
+//   }
+//   </script>
+
 
 
